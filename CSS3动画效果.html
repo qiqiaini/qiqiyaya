@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.div1{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			/*设置变化效果和时长*/
+			animation:myfirst 3s;
+		}
+		@keyframes myfirst{
+			from{
+				background: red;
+			}
+			to{
+				background: yellow;
+			}
+		}
+		.div2{
+			width: 100px;
+			height: 100px;
+			background: red;
+			position:relative;
+			animation:mysec 5s;
+		}
+		@keyframes mysec{
+			0%{
+				background: red;
+				left:0px;
+				top:0px;
+			}
+			25%{
+				background: yellow;
+				left:200px;
+				top:0px;
+			}
+			50%{
+				background: blue;
+				left:200px;
+				top:200px;
+			}
+			75%{
+				background: green;
+				left:0px;
+				top:200px;
+			}
+			100%{
+				background: red;
+				left:0px;
+				top:0px;
+				}		
+			}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+</body>
+</html>
